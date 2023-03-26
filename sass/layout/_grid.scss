@@ -5,6 +5,15 @@
   &:not(:last-child) {
     // On selectionne tout sauf la pseudo class last-child !
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -16,8 +25,17 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
+
   // pour utiliser une variable dans la fonction calc il faut mettre un # et les accolades
   .col-1-of-2 {
     width: calc(
@@ -27,7 +45,6 @@
 
   .col-1-of-3 {
     width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
-    background-color: orang;
   }
 
   .col-2-of-3 {
