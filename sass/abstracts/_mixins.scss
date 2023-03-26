@@ -22,7 +22,6 @@
 1200 - 1800 px : is where our normal style apply
 1800 + : Big desktop
 
-
 // @mixin respond-phone {
 //   @media (max-width: 600px) {
 //     @content;
@@ -35,6 +34,8 @@ $breakpoint argument choices :
 - tab-land
 - big-desktop
 */
+
+// ORDER : Base + Typography > general layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
