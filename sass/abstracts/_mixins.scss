@@ -38,6 +38,18 @@ $breakpoint argument choices :
 // ORDER : Base + Typography > general layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
+
+  @if $breakpoint == ridiculous-phone {
+    @media (max-width:350px){
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-phone {
+    @media (max-width: 450px) {
+      @content;
+    }
+  }
   @if $breakpoint == phone {
     @media (max-width: 600px) {
       @content;

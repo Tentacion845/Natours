@@ -38,6 +38,10 @@
   @include respond(tab-port) {
     padding: 20rem 0 10rem 0;
   }
+  
+  @include respond(small-phone){
+    padding: 10rem 0 7rem 0;
+  }
 }
 
 .section-stories {

@@ -23,6 +23,11 @@
     transform: skewX(0);
   }
 
+  @include respond(small-phone){
+    font-size: 1.3rem;
+  
+  }
+
   &__shape {
     position: relative;
     width: 15rem;
@@ -39,6 +44,18 @@
     @include respond(phone) {
       transform: skewX(0) translateX(-3rem);
     }
+
+      @include respond(small-phone){
+      float: none;
+        position: relative;
+        left: 45px;
+        margin-bottom: 20px;
+    }
+
+    @include respond(ridiculous-phone){
+      width: 0;
+      height: 0;
+    }
   }
 
   &__image {
@@ -46,6 +63,8 @@
     transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
     transition: all 0.5s;
+  
+
   }
 
   &__text {
@@ -54,6 +73,7 @@
     @include respond(phone) {
       transform: skewX(0);
     }
+
   }
 
   &__caption {

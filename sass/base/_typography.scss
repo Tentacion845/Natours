@@ -22,11 +22,15 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
+    
     @include respond(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
+      font-size: 4rem;
     }
-
+    
+    @include respond(small-phone){
+      font-size: 3rem;
+    }
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
   }
@@ -40,7 +44,11 @@ body {
 
     @include respond(phone) {
       letter-spacing: 0.5rem;
-      font-size: 5rem;
+      font-size: 3.5rem;
+    }
+
+      @include respond (small-phone){
+      font-size: 1.5rem;
     }
   }
 }
@@ -62,6 +70,14 @@ body {
   @include respond(phone) {
     font-size: 2rem;
   }
+
+    @include respond(small-phone) {
+      text-align: center;
+      font-size: 1.8rem;
+  }
+
+
+
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -77,6 +93,12 @@ body {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+
+  @include respond(small-phone){
+    font-size: 1.4rem;
+    text-align: center;
+
+  }
 }
 
 .paragraph {

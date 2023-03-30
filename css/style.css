@@ -96,7 +96,10 @@ body {
     @media (max-width: 600px) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-size: 5rem; } }
+        font-size: 4rem; } }
+    @media (max-width: 450px) {
+      .heading-primary--main {
+        font-size: 3rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -106,7 +109,10 @@ body {
     @media (max-width: 600px) {
       .heading-primary--sub {
         letter-spacing: 0.5rem;
-        font-size: 5rem; } }
+        font-size: 3.5rem; } }
+    @media (max-width: 450px) {
+      .heading-primary--sub {
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -124,6 +130,10 @@ body {
   @media (max-width: 600px) {
     .heading-secondary {
       font-size: 2rem; } }
+  @media (max-width: 450px) {
+    .heading-secondary {
+      text-align: center;
+      font-size: 1.8rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -132,6 +142,10 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 450px) {
+    .heading-tertiary {
+      font-size: 1.4rem;
+      text-align: center; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -231,6 +245,10 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+@media (max-width: 450px) {
+  .btn-text {
+    font-size: 1rem; } }
 
 .composition {
   position: relative; }
@@ -448,6 +466,9 @@ body {
   @media (max-width: 600px) {
     .story {
       transform: skewX(0); } }
+  @media (max-width: 450px) {
+    .story {
+      font-size: 1.3rem; } }
   .story__shape {
     position: relative;
     width: 15rem;
@@ -461,6 +482,16 @@ body {
     @media (max-width: 600px) {
       .story__shape {
         transform: skewX(0) translateX(-3rem); } }
+    @media (max-width: 450px) {
+      .story__shape {
+        float: none;
+        position: relative;
+        left: 45px;
+        margin-bottom: 20px; } }
+    @media (max-width: 350px) {
+      .story__shape {
+        width: 0;
+        height: 0; } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -522,6 +553,9 @@ body {
   @media (max-width: 900px) {
     .form__input {
       width: 100%; } }
+  @media (max-width: 450px) {
+    .form__input {
+      padding: none; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
@@ -719,6 +753,9 @@ body {
     left: 4rem; }
   .header__logo {
     height: 3.5rem; }
+    @media (max-width: 450px) {
+      .header__logo {
+        height: 3rem; } }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -801,6 +838,14 @@ body {
     .navigation__button {
       top: 3.5rem;
       right: 3.5rem; } }
+  @media (max-width: 450px) {
+    .navigation__button {
+      width: 5rem;
+      height: 5rem; } }
+  @media (max-width: 350px) {
+    .navigation__button {
+      top: 2.7rem;
+      right: 2.7rem; } }
 
 .navigation__background {
   z-index: 1000;
@@ -820,6 +865,14 @@ body {
     .navigation__background {
       top: 3.7rem;
       right: 3.7rem; } }
+  @media (max-width: 450px) {
+    .navigation__background {
+      width: 4.5rem;
+      height: 4.5rem; } }
+  @media (max-width: 350px) {
+    .navigation__background {
+      top: 2.8rem;
+      right: 2.8rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -858,6 +911,9 @@ body {
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
+  @media (max-width: 450px) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 1.5rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -879,6 +935,9 @@ body {
     height: 2px;
     background-color: #333;
     display: inline-block; }
+    @media (max-width: 450px) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        height: 1px; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
@@ -888,6 +947,9 @@ body {
     top: -0.8rem; }
   .navigation__icon::after {
     top: 0.8rem; }
+  @media (max-width: 450px) {
+    .navigation__icon {
+      margin-top: 2.5rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   transform: translateY(-0.3rem); }
@@ -933,6 +995,9 @@ body {
   @media (max-width: 900px) {
     .section-tours {
       padding: 20rem 0 10rem 0; } }
+  @media (max-width: 450px) {
+    .section-tours {
+      padding: 10rem 0 7rem 0; } }
 
 .section-stories {
   position: relative;

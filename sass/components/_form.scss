@@ -20,6 +20,10 @@
       width: 100%;
     }
 
+    @include respond(small-phone){
+      padding: none;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
